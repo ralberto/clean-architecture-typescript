@@ -1,0 +1,46 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "no-loops",
+        "prettier",
+        "notice"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "google",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "no-loops/no-loops": 2,
+        "no-console": 1,
+        "max-len": [
+            "error",
+            {
+                "code": 80,
+                "tabWidth": 2,
+                "ignoreComments": true,
+                "comments": 80,
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true
+            }
+        ],
+        "require-jsdoc" : 0,
+        "@typescript-eslint/no-unused-vars": 0,
+        "@typescript-eslint/no-empty-interface": 0,
+        "@typescript-eslint/no-empty-function": 0,
+        "no-console": 0
+    }
+
+}
