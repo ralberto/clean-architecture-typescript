@@ -1,5 +1,5 @@
-import { SaleRepository } from "../app/interfaces/persistence/SaleRepository";
-import { Sale } from "../domain/sale";
+import {SaleRepository} from "../app/interfaces/persistence/SaleRepository";
+import {Sale} from "../domain/sale";
 
 export class SaleRepositoryImpl implements SaleRepository {
   add(item: Sale): void {
